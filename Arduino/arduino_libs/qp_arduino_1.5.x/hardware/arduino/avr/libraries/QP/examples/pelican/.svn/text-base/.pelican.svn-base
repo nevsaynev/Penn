@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="2.3.2">
+ <item name="license"></item>
+ <group name="locked"/>
+ <group name="settings">
+  <item name="tabs">1</item>
+  <item name="windows">1</item>
+  <item name="grid">3</item>
+ </group>
+ <group name="windows">
+  <item id="components::Pelican::SM">0,0,562,570,*</item>
+  <item id=".::bsp.cpp">44,0,596,252</item>
+  <item id=".::pelican.h">44,62,596,300</item>
+ </group>
+ <group name="search">
+  <item name="options">4129280</item>
+  <item name="replace">0</item>
+ </group>
+ <group name="vars">
+  <item id="ARDUINO_HOME">C:\tools\arduino-1.5.2</item>
+  <item id="ARDUINO_BOARD">UNO</item>
+  <item id="ARDUINO_COM">COM5</item>
+ </group>
+ <group name="tools">
+  <group name="tool">
+   <item name="icon">3</item>
+   <item name="title">make</item>
+   <item name="command">%ARDUINO_HOME%\hardware\tools\avr\bin\tclsh84.exe</item>
+   <item name="args">%ARDUINO_HOME%\tools\qtools\avrmake.tcl %ARDUINO_BOARD% &quot;QP&quot;</item>
+   <item name="initial">.</item>
+   <item name="options">3</item>
+  </group>
+  <group name="tool">
+   <item name="icon">5</item>
+   <item name="title">clean</item>
+   <item name="command">%ARDUINO_HOME%\tools\qtools\rm.exe</item>
+   <item name="args">bin\*</item>
+   <item name="initial">.</item>
+   <item name="options">2</item>
+  </group>
+  <group name="tool">
+   <item name="icon">6</item>
+   <item name="title">upload</item>
+   <item name="command">%ARDUINO_HOME%\tools\qtools\arduinodude.exe</item>
+   <item name="args">%ARDUINO_BOARD% %ARDUINO_COM%</item>
+   <item name="initial">.</item>
+   <item name="options">2</item>
+  </group>
+  <group name="tool">
+   <item name="icon">8</item>
+   <item name="title">teraterm</item>
+   <item name="command">C:\tools\teraterm-4.77\ttermpro.exe</item>
+   <item name="args">/%ARDUINO_COM% /115200</item>
+   <item name="initial"></item>
+   <item name="options">4</item>
+  </group>
+  <group name="tool">
+   <item name="icon">5</item>
+   <item name="title">clean all</item>
+   <item name="command">%ARDUINO_HOME%\tools\qtools\rm.exe</item>
+   <item name="args">lib\QP.a bin\*</item>
+   <item name="initial"></item>
+   <item name="options">2</item>
+  </group>
+ </group>
+</session>
